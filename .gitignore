@@ -1,0 +1,7 @@
+.vs/
+/vendor
+/Hazel/vendor/
+bin/
+bin-int/
+/bin-int
+Hazel.sln
