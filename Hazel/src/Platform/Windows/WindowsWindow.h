@@ -1,7 +1,11 @@
 #pragma once
 
 #include "Hazel/Window.h"
+
+struct GLFWwindow;
+
 #include <GLFW/glfw3.h>
+
 
 namespace Hazel {
 
