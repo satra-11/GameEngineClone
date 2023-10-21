@@ -4,3 +4,5 @@
 bin/
 bin-int/
 Hazel.sln
+.lesshst
+.bash_history
