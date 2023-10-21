@@ -1,8 +1,11 @@
-.vs/
+# These needs to be copied 
 /vendor
-/Hazel/vendor/
+/Hazel/vendor
+# ------------------------
+.vs/
 bin/
 bin-int/
 Hazel.sln
-.lesshst
-.bash_history
+*.lesshst
+*.bash_history
+
