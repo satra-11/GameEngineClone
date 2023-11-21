@@ -36,7 +36,7 @@ namespace Hazel {
 		m_Data.Width = props.Width;
 		m_Data.Height = props.Height;
 
-		HZ_CORE_INFO("Creating window{0} ({1}, {2})", props.Title, props.Width, props.Width, props.Height);
+		HZ_CORE_INFO("Creating window{0} ({1}, {2})", props.Title, props.Width, props.Height);
 
 
 		if (!s_GLFWInitialized)
@@ -98,6 +98,13 @@ namespace Hazel {
 				}
 
 			}
+		});
+
+		glfwSetCharCallback(m_Window, [](GLFWwindow* window,unsigned int keycode)
+		{
+			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+		KeyTypedEvent event(keycode);
+		data.EventCallback(event);
 		});
 
 		glfwSetMouseButtonCallback(m_Window, [](GLFWwindow* window, int button, int action, int modes)

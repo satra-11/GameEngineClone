@@ -82,3 +82,41 @@ git submodule add https://github.com/TheCherno/imgui /Hazel/vendor/imgui
 git submodule add https://github.com/TheCherno/imgui Hazel/vendor/imgui
 git submodule add https://github.com/TheCherno/imgui Hazel/vendor/imgui -f
 git submodule add -f https://github.com/TheCherno/imgui Hazel/vendor/imgui 
+git add .
+git rm --cached Hazel/vendor/imgui
+git rm --cached Hazel/vendor/imgui
+rm -rf Hazel/vendor/imgui
+git add .
+git commit -m "submodule deleted"
+git status
+git push origin main
+git status 
+git add .
+git status
+git add .
+git status
+git restore --staged .bash_history .gitignore
+git status
+git add . 
+git status
+git restore -staged .bash_history
+git restore --staged .bash_history
+git commit -m "gitignore"
+git push origin main
+git status
+git add .
+git status
+cd dev
+dir
+cd ..
+cd Spdlog
+git init
+cd Spdlog
+dir
+cd ..
+git submodule add https://github.com/gabime/spdlog Iroha\vendor\spdlog
+git submodule add https://github.com/gabime/spdlog Spdlog/vendor/spdlog
+cd ..
+cd spdlog
+git submodule add https://github.com/gabime/spdlog Spdlog/vendor/spdlog
+cd ..
